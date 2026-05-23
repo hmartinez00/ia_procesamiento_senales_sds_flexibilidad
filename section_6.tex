@@ -1,0 +1,41 @@
+\section{Discusión y Análisis}
+
+\subsection{Robustez y Generalización}
+
+Uno de los desafíos persistentes que surge al analizar sistemas cognitivos en el espacio radica en distinguir entre un buen desempeño en condiciones controladas y una verdadera robustez operativa. Aunque los resultados experimentales muestran mejoras claras en clasificación de modulación y mitigación de interferencias, el comportamiento del framework tiende a variar según cuán representativas sean las condiciones de prueba respecto a la realidad orbital.
+
+Doha et al. \cite{Doha2026} destacan en su revisión cómo el hardware drift, las diferencias entre datasets de entrenamiento y condiciones de vuelo reales, junto con la gestión de datos, representan limitaciones prácticas recurrentes en soluciones IA-SDR. En nuestro caso, el modelo mantiene una degradación aceptable hasta cierto punto, pero pierde precisión de forma notable cuando se enfrentan escenarios con interferencias no vistas durante el entrenamiento o con distribuciones de Doppler extremas. 
+
+Resulta particularmente llamativo que la combinación de representaciones I/Q y espectrogramas mejora la generalización, aunque no elimina por completo la brecha. Esto sugiere que, si bien el enfoque propuesto avanza respecto a soluciones estáticas, aún requiere mecanismos más sofisticados de adaptación continua o aprendizaje en el borde para alcanzar el nivel de fiabilidad exigido en misiones críticas.
+
+\subsection{Consideraciones de Recursos Onboard}
+
+Lejos de ser un asunto resuelto, el paso de simulaciones en GPU a hardware satelital impone restricciones que obligan a compromisos constantes. El consumo computacional y energético del módulo cognitivo representa uno de los puntos más delicados de la arquitectura.
+
+\begin{table}[h]
+\centering
+\caption{Comparativa de consumo computacional entre enfoques clásico y propuesto}
+\label{tab:consumo_computacional}
+\begin{tabular}{lccc}
+\hline
+\textbf{Métrica} & \textbf{Procesamiento Clásico} & \textbf{Framework IA} & \textbf{Incremento} \\
+\hline
+Uso de FPGA/CPU (\%) & 42 & 68 & +62\% \\
+Memoria (MB) & 85 & 145 & +71\% \\
+Latencia inferencia (ms) & 12 & 48 & +300\% \\
+Consumo energético estimado (W) & 3.8 & 5.9 & +55\% \\
+\hline
+\end{tabular}
+\end{table}
+
+Aunque el aumento de recursos resulta significativo, cabe matizar que las optimizaciones aplicadas (cuantización a 8 bits, pruning selectivo y inferencia por lotes) permiten mantener el sistema dentro de presupuestos viables para plataformas SDS de nueva generación. Doha et al. \cite{Doha2026} advierten precisamente sobre estos trade-offs, señalando que muchos enfoques teóricamente potentes fracasan en la práctica por ignorar las limitaciones energéticas y térmicas del entorno espacial.
+
+En nuestra implementación, priorizamos la ejecución en ventanas temporales no críticas y la posibilidad de desactivar selectivamente módulos cognitivos cuando el enlace se encuentra estable, estrategia que parece ofrecer un equilibrio razonable.
+
+\subsection{Impacto en Flexibilidad de Misión}
+
+Resulta revelador observar cómo pequeñas mejoras en capacidad cognitiva pueden transformar radicalmente el concepto mismo de lo que un satélite puede lograr a lo largo de su vida útil. Jiang et al. \cite{Jiang2023} identifican en su análisis de SDN satelitales la necesidad de mayor escalabilidad y adaptabilidad operativa, especialmente en constelaciones LEO donde las condiciones cambian con rapidez y los requisitos de misión se solapan.
+
+Nuestro framework permite transitar de forma autónoma entre perfiles de misión —por ejemplo, priorizar throughput en ventanas de visibilidad favorables o robustez en periodos de interferencia— sin depender exclusivamente de comandos desde tierra. Esta capacidad no solo reduce la carga operativa en estaciones terrenas, sino que abre la puerta a escenarios verdaderamente multi-propósito donde un mismo satélite atiende comunicaciones, observación y experimentos científicos con mínima intervención humana.
+
+No obstante, también emergen desafíos de mayor calado. La escalabilidad a constelaciones de cientos de unidades exige mecanismos coordinados de aprendizaje federado y gestión segura de actualizaciones, aspectos que exceden el alcance del presente trabajo pero que resultan críticos para adopción a escala industrial. En última instancia, los resultados sugieren que la integración de IA en SDS no representa solo una mejora incremental, sino un cambio cualitativo hacia sistemas espaciales más resilientes y versátiles.

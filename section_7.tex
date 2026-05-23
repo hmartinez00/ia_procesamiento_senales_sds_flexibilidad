@@ -1,0 +1,25 @@
+\section{Conclusiones y Trabajos Futuros}
+
+\subsection{Conclusiones}
+
+Tras recorrer el camino desde los antecedentes hasta los resultados experimentales, emerge con claridad una convicción: la integración de inteligencia artificial en el procesamiento de señales marca un punto de inflexión para los satélites definidos por software. El framework propuesto no solo mejora métricas aisladas, sino que transforma la propia naturaleza operativa de estas plataformas.
+
+Los experimentos realizados demostraron mejoras sustanciales en clasificación automática de modulación, alcanzando más de 14 puntos porcentuales sobre baselines tradicionales en rangos operativos relevantes. Igualmente relevante resultó la capacidad de reconfiguración dinámica, que redujo tiempos de adaptación y aumentó la eficiencia espectral en torno al 27\% en escenarios variables. Estas ganancias no son meramente numéricas. Reflejan una transición real desde sistemas reprogramables hacia plataformas con capacidades cognitivas rudimentarias pero funcionales.
+
+El uso del dataset RML24 resultó clave para anclar los desarrollos en condiciones representativas del canal espacial. Aunque persisten limitaciones —especialmente en generalización ante interferencias no vistas y en el inevitable trade-off entre inteligencia y recursos onboard—, los resultados obtenidos validan el enfoque propuesto como una vía viable para incrementar la flexibilidad operativa de los SDS.
+
+En definitiva, este trabajo contribuye a cerrar la brecha entre el potencial teórico de los satélites definidos por software y su capacidad real de adaptación autónoma en entornos hostiles.
+
+\subsection{Direcciones Futuras}
+
+Uno de los desafíos persistentes que surge al concluir un estudio de esta naturaleza consiste en identificar qué brechas siguen siendo más urgentes. Aunque el framework actual ofrece avances concretos, varias líneas merecen atención prioritaria.
+
+Resulta particularmente prometedor explorar la extensión de estas técnicas a constelaciones completas mediante enfoques de aprendizaje federado y coordinación distribuida. Jiang et al. \cite{Jiang2023} destacan las oportunidades que ofrecen las arquitecturas SDN satelitales a gran escala, sugiriendo que la verdadera potencia cognitiva emergerá cuando múltiples nodos orbitales compartan conocimiento de forma segura y eficiente. Simulaciones a nivel de constelación LEO con cientos de unidades permitirían validar estrategias de reconfiguración colaborativa.
+
+Siguiendo el roadmap propuesto por Doha et al. \cite{Doha2026}, otra dirección crítica radica en fortalecer los aspectos de ciberseguridad y edge AI onboard. La capacidad cognitiva introduce nuevos vectores de ataque que requieren mecanismos de verificación de modelos y detección de manipulaciones adversarias. Asimismo, el desarrollo de arquitecturas híbridas que combinen modelos ligeros con actualizaciones ocasionales desde tierra podría optimizar aún más el balance entre autonomía y control.
+
+Finalmente, el dataset RML24 \cite{Zhang2026} ofrece un excelente punto de partida para investigación continua. Recomendamos su ampliación con escenarios más complejos —interferencias intencionadas, múltiples señales superpuestas y condiciones de radiación— y el establecimiento de benchmarks estandarizados que faciliten la comparación entre diferentes aproximaciones de IA-SDR.
+
+Otras líneas atractivas incluyen la validación en misiones reales tipo CubeSat, la incorporación de reinforcement learning para toma de decisiones a más largo plazo y la exploración de técnicas de compresión extrema de modelos que permitan su ejecución incluso en plataformas con recursos muy limitados. 
+
+Avanzar en estas direcciones no solo consolidará los hallazgos del presente trabajo, sino que contribuirá de forma significativa al desarrollo de la próxima generación de sistemas espaciales verdaderamente inteligentes y adaptativos.

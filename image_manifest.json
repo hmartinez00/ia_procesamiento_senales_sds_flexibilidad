@@ -1,0 +1,26 @@
+{
+    "fig1.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Arquitectura genérica de satélite definido por software SDS mostrando bloques principales: Antena, Front-end RF reconfigurable, Procesador digital SDR, Unidad de control cognitivo IA, Unidad de potencia y enlace de telemetría. Flechas claras indicando flujos de señal y reconfiguración. Estilo limpio IEEE, líneas precisas, bloques rectangulares etiquetados con placeholders minimalistas."
+    },
+    "fig2.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Taxonomía jerárquica de técnicas IA-SDR: rama superior 'Métodos Clásicos' (Filtrado adaptativo, Estimación estadística), rama central 'Machine Learning' (SVM, Random Forest, CNN para AMC), rama inferior 'Aprendizaje Avanzado' (Deep Reinforcement Learning, Modelos Híbridos Cognitivos). Flechas de evolución temporal, bloques rectangulares conectados, estilo limpio IEEE, líneas precisas."
+    },
+    "fig3.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Diagrama de bloques completo de arquitectura cognitiva SDS: capas Perception (Antena, RF Front-end, ADC), Reasoning (AMC Module, Parameter Estimation, Decision Engine con IA), Actuation (Reconfiguration Manager, SDR Runtime). Flechas bidireccionales claras mostrando flujos de señal y feedback cognitivo. Bloques rectangulares conectados con líneas precisas, estilo limpio IEEE."
+    },
+    "fig4.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Cuatro paneles comparativos mostrando ejemplos de señales: 1) Constelación IQ de QPSK en alto SNR, 2) Señal con fuerte Doppler shift, 3) Spectrogram de 16QAM con fading, 4) Señal contaminada con interferencia. Gráficos limpios con ejes, líneas y curvas precisas en azul y gris, estilo IEEE técnico vectorial."
+    },
+    "fig5.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Múltiples curvas ROC comparativas (4-5 curvas) para diferentes modelos y niveles de SNR. Ejes claros con etiquetas técnicas, líneas sólidas y punteadas en azul cobalto y gris, estilo limpio vectorial IEEE."
+    },
+    "fig6.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Gráfico de barras combinado con líneas: ganancia porcentual en flexibilidad (barras) y tiempo de reconfiguración en milisegundos (línea). Dos grupos comparativos (Clásico vs Propuesto), ejes técnicos precisos, estilo vectorial limpio IEEE."
+    },
+    "fig_consumo.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Gráfico de barras agrupadas comparando consumo computacional (CPU/FPGA, Memoria, Latencia, Energía) entre Procesamiento Clásico y Framework IA propuesto. Barras en azul cobalto y gris, ejes técnicos precisos, estilo limpio vectorial IEEE."
+    },
+    "future_vision.png": {
+        "prompt_ia": "2D technical vector diagram, engineering schematic, flat design, minimalista, fondo blanco puro, colores azul cobalto #0047AB y gris técnico #4A4A4A, sin sombras, sin gradientes, sin texto incrustado. Visión conceptual de constelación LEO con satélites SDS cognitivos interconectados. Muestra múltiples satélites, enlaces de comunicación, capas de IA distribuida y flujos de reconfiguración autónoma. Estilo limpio vectorial IEEE, líneas precisas y bloques minimalistas."
+    }
+}
