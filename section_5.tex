@@ -6,7 +6,7 @@ Resulta revelador observar cómo un buen dataset puede transformar el desempeño
 
 En promedio, el modelo propuesto alcanzó una precisión global del 92.4\% en el rango de SNR de -5 dB a 15 dB, superando en más de 14 puntos porcentuales al enfoque de máxima verosimilitud y en aproximadamente 7-9 puntos a otros clasificadores basados en machine learning clásico. Particularmente llamativo es el comportamiento en condiciones de bajo SNR, donde la brecha se amplía de forma significativa.
 
-\begin{table}[h]
+\begin{table*}[h]
 \centering
 \caption{Métricas de precisión en clasificación de modulación (comparativa con baselines)}
 \label{tab:metricas_precision}
@@ -19,7 +19,7 @@ SVM + Features manuales & 84.7 & 0.83 & 61.8 & 93.2 \\
 CNN propuesta & \textbf{92.4} & \textbf{0.91} & \textbf{78.6} & \textbf{98.1} \\
 \hline
 \end{tabular}
-\end{table}
+\end{table*}
 
 Aunque estos números resultan alentadores, cabe matizar que el desempeño tiende a degradarse ligeramente con modulación de orden superior (16QAM y superiores) bajo fuerte fading, un fenómeno esperado dada la complejidad de las constelaciones.
 

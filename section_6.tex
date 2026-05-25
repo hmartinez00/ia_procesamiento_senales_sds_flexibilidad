@@ -12,7 +12,7 @@ Resulta particularmente llamativo que la combinación de representaciones I/Q y 
 
 Lejos de ser un asunto resuelto, el paso de simulaciones en GPU a hardware satelital impone restricciones que obligan a compromisos constantes. El consumo computacional y energético del módulo cognitivo representa uno de los puntos más delicados de la arquitectura.
 
-\begin{table}[h]
+\begin{table*}[h]
 \centering
 \caption{Comparativa de consumo computacional entre enfoques clásico y propuesto}
 \label{tab:consumo_computacional}
@@ -26,7 +26,7 @@ Latencia inferencia (ms) & 12 & 48 & +300\% \\
 Consumo energético estimado (W) & 3.8 & 5.9 & +55\% \\
 \hline
 \end{tabular}
-\end{table}
+\end{table*}
 
 Aunque el aumento de recursos resulta significativo, cabe matizar que las optimizaciones aplicadas (cuantización a 8 bits, pruning selectivo y inferencia por lotes) permiten mantener el sistema dentro de presupuestos viables para plataformas SDS de nueva generación. Doha et al. \cite{Doha2026} advierten precisamente sobre estos trade-offs, señalando que muchos enfoques teóricamente potentes fracasan en la práctica por ignorar las limitaciones energéticas y térmicas del entorno espacial.
 
